@@ -1,9 +1,5 @@
 import assert from "assert"
-import transform from './jet-transform'
-
-const ignoreWhitespace = (str) => {
-  return str.replace(/\s*/g, "")
-}
+import { transform, ignoreWhitespace } from './helper'
 
 describe("Easley jet template transformation", () => {
   it("converts a self-closing html tag without attributes", () => {
